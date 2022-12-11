@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css linked  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- food css linked  -->
+    <link rel="stylesheet" href="../reactWebsite/css/food.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <nav class="nav-bar">
+            <a href="../index.html">home</a>
+            <!-- <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#blogs">blogs</a>
+            <a href="#contact">contact</a> -->
+        </nav>
+    </header>
+
+    <!-- main section  -->
+
+    <div class="box tilt food">
+        <h2>Food Made With Love</h2>
+        <img src="../images/web-img/food.png" alt="">
+        <div class="sub-food">
+            <img src="../images/web-img/food/food1.png" alt="">
+            <img src="../images/web-img/food/food2.png" alt="">
+            <img src="../images/web-img/food/food3.png" alt="">
+        </div>
+        <div class="web-info">
+            <h4 class="web-sub-info">✔︎ I Make This Website Using HTML, Then Design it Using Custom CSS,</h4>
+            <h4 class="web-sub-info">✔︎ Then Used JavaScript For More Attractive</h4>
+            <h4 class="web-sub-info">✔︎ And Using Media Query To be Responsive For All Devices</h4>
+        </div>
+        <div class="content">
+            <a href="https://harmonious-cheesecake-51af6f.netlify.app/" target="_blank" class="btn">Visit Website for More Info</a>
+        </div>
+    </div>
+
+
+    <!-- Source Code With Live Link Below. -->
+
+
+
+    <!-- js linked  -->
+    <script>
+        let menu = document.querySelector('#menu-bars')
+        let header = document.querySelector('header')
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times')
+            header.classList.toggle('active')
+        };
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        }
+    </script>
+
+</body>
+
+</html>

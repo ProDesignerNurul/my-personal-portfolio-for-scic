@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css linked  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- food css linked  -->
+    <link rel="stylesheet" href="../reactWebsite/css/food.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <nav class="nav-bar">
+            <a href="../index.html">home</a>
+            <!-- <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#blogs">blogs</a>
+            <a href="#contact">contact</a> -->
+        </nav>
+    </header>
+
+    <!-- main section  -->
+
+    <div class="box tilt food">
+        <h2>HTML Blogs</h2>
+        <img src="../images/blog-img-1.jpg" alt="">
+        <!-- <div class="sub-food">
+            <img src="../images/web-img/food/food1.png" alt="">
+            <img src="../images/web-img/food/food2.png" alt="">
+            <img src="../images/web-img/food/food3.png" alt="">
+        </div> -->
+        <div class="web-info">
+            <h4 class="web-sub-info">What is HTML?</h4>
+            <p>HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes</p>
+            <h4 class="web-sub-info">How does it work?</h4>
+            <p>HTML consists of a series of short codes typed into a text-file by the site author — these are the tags. The text is then saved as a html file, and viewed through a browser, like Internet Explorer or Netscape Navigator. This browser reads the file and translates the text into a visible form, hopefully rendering the page as the author had intended. Writing your own HTML entails using tags correctly to create your vision. You can use anything from a rudimentary text-editor to a powerful graphical editor to create HTML pages</p>
+            <h4 class="web-sub-info">What are the tags up to?</h4>
+            <p>The tags are what separate normal text from HTML code. You might know them as the words between the <angle-brackets>. They allow all the cool stuff like images and tables and stuff, just by telling your browser what to render on the page. Different tags will perform different functions. The tags themselves dont appear when you view your page through a browser, but their effects do. The simplest tags do nothing more than apply formatting to some text, like this: <br><br>
+
+                <b>These words will be bold</b>, and these will not. <br><br>
+                
+                In the example above, the <b> tags were wrapped around some text, and their effect will be that the contained text will be bolded when viewed through an ordinary web browser. <br><br>
+                
+                If you want to see a list of a load of tags to see whats ahead of you, look at this tag reference. Learning the tags themselves is dealt with in the next section of this website, My First Site.</p>
+        </div>
+        <div class="content">
+            <a href="../index.html" class="btn">Back To Home</a>
+        </div>
+    </div>
+
+
+    <!-- Source Code With Live Link Below. -->
+
+
+
+    <!-- js linked  -->
+    <script>
+        let menu = document.querySelector('#menu-bars')
+        let header = document.querySelector('header')
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times')
+            header.classList.toggle('active')
+        };
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css linked  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- food css linked  -->
+    <link rel="stylesheet" href="../reactWebsite/css/food.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <nav class="nav-bar">
+            <a href="../index.html">home</a>
+            <!-- <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#blogs">blogs</a>
+            <a href="#contact">contact</a> -->
+        </nav>
+    </header>
+
+    <!-- main section  -->
+
+    <div class="box tilt food">
+        <h2>Bootstrap Blogs</h2>
+        <img src="../images/blog-img-3.jpg" alt="">
+        <!-- <div class="sub-food">
+            <img src="../images/web-img/food/food1.png" alt="">
+            <img src="../images/web-img/food/food2.png" alt="">
+            <img src="../images/web-img/food/food3.png" alt="">
+        </div> -->
+        <div class="web-info">
+            <h4 class="web-sub-info">What is Bootstrap?</h4>
+            <p>Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs. <br><br>
+
+                As a framework, Bootstrap includes the basics for responsive web development, so developers only need to insert the code into a pre-defined grid system. The Bootstrap framework is built on Hypertext Markup Language (HTML), cascading style sheets (CSS) and JavaScript. Web developers using Bootstrap can build websites much faster without spending time worrying about basic commands and functions.</p>
+
+            <h4 class="web-sub-info">What is Bootstrap used for?</h4>
+            <p> Bootstrap makes responsive web design a reality. It makes it possible for a web page or app to detect the visitor's screen size and orientation and automatically adapt the display accordingly. The mobile-first approach assumes smartphones, tablets and task-specific mobile apps are employees' primary tools for getting work done. Bootstrap addresses the requirements of those technologies in design and includes UI components, layouts, JavaScript tools and the implementation framework. The software is available precompiled or as source code. <br><br>
+
+                Mark Otto and Jacob Thornton developed Bootstrap at Twitter to improve the consistency of tools used on the site and to reduce maintenance. The software was formerly known as Twitter Blueprint and is sometimes referred to as Twitter Bootstrap.</p>
+            <h4 class="web-sub-info">What is bootstrapping in general terms?</h4>
+            <p>In the physical world, a bootstrap is a small strap or loop at the back of a leather boot that enables the boot to be pulled on. In general use, bootstrapping is leveraging a small initial effort into something larger and more significant. The metaphor, "pulling yourself up by your bootstraps," means to achieve success from a small beginning. </p>
+        </div>
+        <div class="content">
+            <a href="../index.html" class="btn">Back To Home</a>
+        </div>
+    </div>
+
+
+    <!-- Source Code With Live Link Below. -->
+
+
+
+    <!-- js linked  -->
+    <script>
+        let menu = document.querySelector('#menu-bars')
+        let header = document.querySelector('header')
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times')
+            header.classList.toggle('active')
+        };
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css linked  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- food css linked  -->
+    <link rel="stylesheet" href="../reactWebsite/css/food.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <nav class="nav-bar">
+            <a href="../index.html">home</a>
+            <!-- <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#blogs">blogs</a>
+            <a href="#contact">contact</a> -->
+        </nav>
+    </header>
+
+    <!-- main section  -->
+
+    <div class="box tilt food">
+        <h2>CSS Blogs</h2>
+        <img src="../images/blog-img-2.jpg" alt="">
+        <!-- <div class="sub-food">
+            <img src="../images/web-img/food/food1.png" alt="">
+            <img src="../images/web-img/food/food2.png" alt="">
+            <img src="../images/web-img/food/food3.png" alt="">
+        </div> -->
+        <div class="web-info">
+            <h4 class="web-sub-info">What Is CSS?</h4>
+            <p>CSS stands for Cascading Style Sheets language and is used to stylize elements written in a markup language such as HTML. It separates the content from the visual representation of the site. The relation between HTML and CSS is strongly tied together since HTML is the very foundation of a site and CSS is all of the aesthetics of an entire website.</p>
+
+            <h4 class="web-sub-info">How Does CSS Work?</h4>
+            <p>CSS uses a simple English based syntax with a set of rules that govern it. Like weve mentioned before, HTML was never intended to use style elements, only the markup of the page. It was created to merely describe the content. For example:  <br><br>
+
+            But how do you style the paragraph? The CSS syntax structure is pretty simple. It has a selector and a declaration block. You select an element and then declare what you want to do with it. Pretty straightforward, right? <br><br>
+            
+            However, there are rules you have to remember. The structure rules are pretty simple, so dont worry. <br><br>
+            
+            The selector points to the HTML elements you want to style. The declaration block contains one or more declarations separated by semicolons.
+            
+            Each declaration includes a CSS property name and a value, separated by a colon. A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+            <h4 class="web-sub-info">Internal, External and Inline CSS Styles</h4>
+            <p>We'll go over each style briefly, for an in-depth explanation of each method, there will be a link below the overview. <br><br>
+
+                Lets start by talking about the Internal style. CSS styles done this way are loaded each time an entire website is refreshed, which may increase loading time. Additionally, you won't be able to use the same CSS style on multiple pages as its contained within a single page. However, this also comes with benefits. Having everything on one page makes it easier to share the template for a preview. <br><br>
+                
+                The External method might be the most convenient one. Everything is done externally on a .css file. This means you can do all the styling on a separate file and apply the CSS to any page you want. The External style might also improve loading times. <br><br>
+                
+                Lastly, we will talk about the Inline style of CSS. Inline works with specific elements that have the  tag. Each component has to be stylized, so it might not be the best or fastest way to handle CSS. But it can come in handy. For example, if you want to change a single element, quickly preview changes, or maybe you dont have access to the CSS files.</p>
+        </div>
+        <div class="content">
+            <a href="../index.html" class="btn">Back To Home</a>
+        </div>
+    </div>
+
+
+    <!-- Source Code With Live Link Below. -->
+
+
+
+    <!-- js linked  -->
+    <script>
+        let menu = document.querySelector('#menu-bars')
+        let header = document.querySelector('header')
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times')
+            header.classList.toggle('active')
+        };
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        }
+    </script>
+
+</body>
+
+</html>
